@@ -421,7 +421,9 @@ def get_github_releases(repo):
 
     try:
         ssl._create_default_https_context = ssl._create_unverified_context
-        with urllib.request.urlopen('https://git.disroot.org/api/v1/repos/Neoneko/Cats-Blender-Plugin/releases') as url:
+        # GitHub API requires a User-Agent header
+        req = urllib.request.Request('https://api.github.com/repos/stevenjwheeler/Cats-Blender-Plugin/releases', headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as url:
             data = json.loads(url.read().decode())
     except urllib.error.URLError:
         print('URL ERROR')
@@ -431,8 +433,8 @@ def get_github_releases(repo):
     
     # Determine tag prefix based on Blender version
     tag_prefix = ""
-    if bpy.app.version >= (5, 0) and bpy.app.version < (5, 1):
-        tag_prefix = "5.0."
+    if bpy.app.version >= (5, 1) and bpy.app.version < (5, 2):
+        tag_prefix = "5.1."
 
     for version in data:
         full_tag = version.get('tag_name')
@@ -544,9 +546,11 @@ def update_now(version=None, latest=False, dev=False):
         return
     if dev:
         print('UPDATE TO DEVELOPMENT')
-        # Dynamically construct dev branch URL based on major version
-        major_version = CATS_VERSION.split('.')[0]
-        update_link = f'https://git.disroot.org/Neoneko/Cats-Blender-Plugin/archive/blender-{major_version}x-dev.zip'
+        # Dynamically construct dev branch URL based on version parts
+        version_parts = CATS_VERSION.split('.')
+        # Use major and minor version to match branch name (e.g., 51 for 5.1)
+        branch_id = f"{version_parts[0]}{version_parts[1]}"
+        update_link = f'https://github.com/stevenjwheeler/Cats-Blender-Plugin/archive/refs/heads/blender-{branch_id}-dev.zip'
     elif latest or not version:
         print('UPDATE TO ' + latest_version_str)
         update_link = version_list.get(latest_version_str)[0]
