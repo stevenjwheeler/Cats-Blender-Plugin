@@ -25,7 +25,8 @@ dictionary: dict[str, str] = dict()
 languages = []
 verbose = True
 last_loaded_language = None
-dictionary_download_link = "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-translations/blob/4.3-translations/dictionary.json"
+# Use the new repository for translations (mirroring the main repo if applicable)
+dictionary_download_link = "https://raw.githubusercontent.com/stevenjwheeler/Cats-Blender-Plugin/blender-51-dev/resources/dictionary.json"
 _addon_startup_time = None
 
 def load_translations(override_language=None):
@@ -228,10 +229,10 @@ class DownloadTranslations(bpy.types.Operator):
 
     def execute(self, context):
         # GitHub repository and folder information
-        repo_owner = "teamneoneko"
-        repo_name = "Cats-Blender-Plugin-Unofficial-translations"
-        branch = "5x-translations"
-        folder_path = "UI%20Tanslations"
+        repo_owner = "stevenjwheeler"
+        repo_name = "Cats-Blender-Plugin"
+        branch = "blender-51-dev"
+        folder_path = "resources/translations"
 
         # Construct the API URL to get the list of files in the folder
         api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{folder_path}?ref={branch}"
