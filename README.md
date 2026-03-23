@@ -1,7 +1,13 @@
-# Cats Blender Plugin Blender 5.x.
+# Cats Blender Plugin Blender 5.1.
 #### Note Cats is basically on life Support unto Avatar Toolkit is more stable, we will stop pushing updates to Cats once Avatar Toolkit is stable.
 
-The non official version of Cats Blender Plugin which is maintained by Yusarina, Cats is an tool designed to shorten steps needed to import and optimize models into VRChat. Compatible models are: MMD, XNALara, Mixamo, Source Engine, Unreal Engine, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3DS Max and potentially more.
+The non official version of Cats Blender Plugin which is now maintained by otter_oasis. Cats is an tool designed to shorten steps needed to import and optimize models into VRChat. Compatible models are: MMD, XNALara, Mixamo, Source Engine, Unreal Engine, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3DS Max and potentially more.
+
+### Blender 5.1 Compatibility
+This version of Cats is specifically tailored for **Blender 5.1**. 
+
+**Why state-specific for 5.1?**
+Blender 5.1 introduced **Python 3.13**. While functionally similar to 5.0, this change may require maintenance of bundled libraries and API compatibility layers to ensure stability in the new python. Using this version on Blender 5.0 or older is not recommended and is blocked.
 
 ### Please view the readme [here](https://github.com/unofficalcats/Cats-Blender-Plugin-Unofficial-/tree/Welcome)
 
@@ -12,3 +18,4 @@ You can find both 3.6 and 4.1 blender releases [here](https://github.com/unoffic
 - You can find the development version for Blender 3.6 [here](https://github.com/unofficalcats/Cats-Blender-Plugin-Unofficial-/tree/blender-36-dev).
 - You can find the development version for Blender 4.1 [here](https://github.com/unofficalcats/Cats-Blender-Plugin-Unofficial-/tree/blender-41-dev).
 - You can find the development version for Blender 4.2 [here](https://github.com/unofficalcats/Cats-Blender-Plugin-Unofficial-/tree/blender-42-dev).
+- You can find the development version for Blender 5.1 [here](https://github.com/unofficalcats/Cats-Blender-Plugin-Unofficial-/tree/blender-51-dev).
