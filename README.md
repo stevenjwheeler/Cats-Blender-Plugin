@@ -1,29 +1,24 @@
 # Cats Blender Plugin
 
-### The Neoneko version of Cats is no longer maintained, feel free to fork.
+### This version of CATS is forked from the no longer maintained Neoneko version.
 
 ### DO NOT ASK FOR HELP IN THE ORIGINAL CATS DISCORD SERVER, PLEASE READ BELOW!
 #### PLEASE DO NOT ASK FOR HELP FOR THIS VERSION OF CATS IN THE CATS DISCORD. THIS CATS IS NOT THE ORINGAL VERSION SO SUPPORT MAY NOT BE GIVEN IN THEIR DISCORD SERVER. IF YOU HAVE A BUG OR NEED HELP PLEASE START AN [ISSUE](https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/issues) OR JOIN OUR [DISCORD](https://discord.catsblenderplugin.xyz) SERVER.
 
-#### Struggling to find the correct version of Cats for your Blender version? Visit our website: https://catsblenderplugin.xyz/
-
-The unofficial version of Cats Blender Plugin, maintained by Team Neoneko. Cats is a tool designed to shorten steps needed to import and optimize models into VRChat. Compatible models are: MMD, XNALara, Mixamo, Source Engine, Unreal Engine, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3DS Max and potentially more.
+The unofficial version of Cats Blender Plugin, maintained by otter_oasis (Formerly Team Neoneko). Cats is a tool designed to shorten steps needed to import and optimize models into VRChat. Compatible models are: MMD, XNALara, Mixamo, Source Engine, Unreal Engine, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3DS Max and potentially more.
 
 With Cats it takes only a few minutes to upload your model into VRChat.
 All the hours-long processes of fixing your models are compressed into a few functions!
 
-- Join the unofficial Cats Discord: https://discord.neoneko.xyz/
-- Read the Wiki: https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/wiki
+You can find releases [here](https://github.com/stevenjwheeler/Cats-Blender-Plugin-Unofficial-/releases), ensure you are using the one for your Blender version!
 
-You can find releases [here](https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases), ensure you are using the one for your Blender version!
-
-- You can find the development version for Blender 5.0 [here](https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/tree/blender-5x-dev).  
+- You can find the development version for Blender 5.0 [here](https://github.com/stevenjwheeler/Cats-Blender-Plugin-Unofficial-/tree/blender-5x-dev).  
 
 ## Blender Version Support
 
-**Current Supported Version:** Blender 5.0+
+**Current Supported Version:** Blender 5.1+
 
-For detailed version support policies, see the [Version Support Wiki](https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/wiki/Version-Support).
+For detailed version support policies, see the [Version Support Wiki](https://github.com/stevenjwheeler/Cats-Blender-Plugin-Unofficial-/wiki/Version-Support).
 
 ## Features
 
@@ -37,7 +32,7 @@ Cats provides comprehensive tools for VRChat avatar creation:
 - **Translation Tools:** Convert Japanese names to English
 - **And much more!**
 
-For complete feature documentation, visit the [Wiki](https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/wiki).
+For complete feature documentation, visit the [Wiki](https://github.com/stevenjwheeler/Cats-Blender-Plugin-Unofficial-/wiki).
 
 
 ## Requirements
@@ -58,12 +53,12 @@ Some features require additional plugins:
 - **Material Combiner** (for texture atlasing): https://github.com/Grim-es/material-combiner-addon/
 - **Immersive Scaler** (for scaling tools): https://github.com/triazo/immersive_scaler
 
-See the [Installation Wiki](https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/wiki/Installation#optional-dependencies) for details.
+See the [Installation Wiki](https://github.com/stevenjwheeler/Cats-Blender-Plugin-Unofficial-/wiki/Installation#optional-dependencies) for details.
 
 ## Installation
 
-1. Download the latest release from [Releases](https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases)
-2. In Blender 5.0+, go to **Edit > Preferences > Extensions**
+1. Download the latest release from [Releases](https://github.com/stevenjwheeler/Cats-Blender-Plugin-Unofficial-/releases)
+2. In Blender 5.1+, go to **Edit > Preferences > Extensions**
 3. Click **Install from Disk**
 4. Select the downloaded ZIP file (do not extract it)
 5. Enable the extension
@@ -84,7 +79,8 @@ For comprehensive documentation, visit the [Cats Wiki](https://github.com/teamne
 
 ## Acknowledgements
 
-Maintained by Team Neoneko (Yusarina).
+Maintained by otter_oasis.
+Formerly maintained by Team Neoneko (Yusarina).
 
 ### Code Contributors:
 - Hotox
